@@ -5,15 +5,14 @@ describe('Account', function(){
 
   beforeEach(function(){
     account = new Account();
+    account.deposit(1000)
   })
 
   it('shows the correct balance after a deposit', function(){
-    account.deposit(1000)
     expect(account.currentBalance()).toEqual(1000);
   })
 
   it('shows the correct balance after a withdrawal', function(){
-    account.deposit(1000)
     account.withdrawal(500)
     expect(account.currentBalance()).toEqual(500);
   })
@@ -23,14 +22,15 @@ describe('Account', function(){
   })
 
   it('prints a statement showing a deposit', function(){
-    account.deposit(1000)
     expect(account.printStatement()).toContain("1000");
   })
 
   it('prints a statement showing a withdrawal', function(){
-    account.deposit(1000)
     account.withdrawal(500)
     expect(account.printStatement()).toContain("500");
   })
 
+  it('shows the date in which each transaction occurred', function(){
+    expect(account.printStatement()).toContain("03/06/19");
+  })
 });

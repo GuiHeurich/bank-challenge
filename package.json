@@ -4,6 +4,7 @@
   "description": "Tech Test, Makers Academy Week 10",
   "main": "index.js",
   "dependencies": {
+    "dateformat": "^3.0.3",
     "jasmine": "^3.4.0"
   },
   "devDependencies": {
@@ -14,9 +15,9 @@
     "test": "nyc jasmine"
   },
   "repository": {
-  "type": "git",
-  "url": "git+https://github.com/guilhe0756/bank-challenge.git"
-},
+    "type": "git",
+    "url": "git+https://github.com/guilhe0756/bank-challenge.git"
+  },
   "author": "Gui Heurich",
   "license": "ISC"
 }
