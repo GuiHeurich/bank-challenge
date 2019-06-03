@@ -34,4 +34,4 @@ I would like my bank statement to show the date of each transaction in a descend
   1. Read the challenge, took notes of the acceptance criteria
   2. Planned the functions Account and AccountHistory
   3. Wrote user Stories (see above)
-  4. Redesigned my functions. They now are Account, Deposit, Withdrawal, and History.
+  4. Redesigned my functions. They now are Account, Deposit and Withdrawal.

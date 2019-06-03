@@ -7,9 +7,15 @@ describe('Account', function(){
     account = new Account();
   })
 
-  it('A User can deposit money into a new account', function(){
+  it('Account shows the correct balance after a deposit', function(){
     account.deposit(1000)
     expect(account.currentBalance()).toEqual(1000);
+  })
+
+  it('Account shows the correct balance after a withdrawal', function(){
+    account.deposit(1000)
+    account.withdrawal(500)
+    expect(account.currentBalance()).toEqual(500);
   })
 
 });
