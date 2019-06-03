@@ -7,25 +7,15 @@ describe('Account', function(){
     account = new Account();
   })
 
-
-
-
-
-  it('shows the correct balance after a deposit', function(){
-    account.deposit(1000)
-    expect(account.currentBalance()).toEqual(1000);
+  it('A User can deposit money into a new account', function(){
+    expect(account.deposit(1000)).toBe(undefined);
   })
 
-  it('shows the correct balance after a withdrawal', function(){
-    account.deposit(1000)
-    account.withdrawal(500)
-    expect(account.currentBalance()).toEqual(500);
+  it('A user can withdrawal money from an account', function(){
+    expect(account.withdrawal(1000)).toBe(undefined);
   })
 
-  it('prints a statement', function(){
-    account.deposit(1000)
-    account.withdrawal(500)
-    expect(account.printStatement()).toContain("date || credit || debit || balance");
+  it('A user can print a statement from an account', function(){
+    expect(account.printStatement()).toBeDefined();
   })
-
 });
