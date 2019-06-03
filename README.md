@@ -1,5 +1,6 @@
 #### User Stories
 
+```
 As a bank user,
 so that I can add money to my Account
 I would like to be able to deposit a sum of my choosing.
@@ -27,7 +28,7 @@ I would like my bank statement to show the date in which each transaction occurr
 As a bank user,
 so that I can visualise my most recent transactions first,
 I would like my bank statement to show the date of each transaction in a descending order.
-
+```
 
 #### Process followed through this challenge
   0. Decided to use Javascript, Jasmine, Eslint and Istanbul.
