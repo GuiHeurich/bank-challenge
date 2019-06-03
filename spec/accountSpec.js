@@ -6,10 +6,10 @@ describe('Account', function(){
   beforeEach(function(){
     account = new Account();
   })
-  
+
   it('A User can deposit money into a new account', function(){
     account.deposit(1000)
-    expect(account.balance()).toEqual(1000);
+    expect(account.currentBalance()).toEqual(1000);
   })
 
 });
