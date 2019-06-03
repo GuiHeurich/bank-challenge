@@ -13,6 +13,10 @@
   "scripts": {
     "test": "nyc jasmine"
   },
+  "repository": {
+  "type": "git",
+  "url": "git+https://github.com/guilhe0756/bank-challenge.git"
+},
   "author": "Gui Heurich",
   "license": "ISC"
 }
