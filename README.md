@@ -76,10 +76,14 @@ To run the tests, coverage and the linter, please run ```npm test```.
   1. Read the challenge, took notes of the acceptance criteria
   2. Planned the functions Account and AccountHistory
   3. Wrote user Stories (see below)
-  4. Redesigned my functions. They now are Account, Deposit and Withdrawal.
+  4. Redesigned my functions. They now are Account, Transaction and AccountHistory.
   5. Implemented User Stories with a TDD approach.
   6. Refactored the whole code to check for Single Responsibility principle issues
   7. Final check of the README.
+
+## Why did I structure my code this way?
+
+In this program, I have designed a structure of three classes(i.e. functions). The account function is responsible for three things: deposits, withdrawals, and printing the statement. These are all the functions that the user will need and, in the console, this is the only function that the user will be calling. When you initialise a new Account(), it injects from the AccountHistory function, which handles all the history of transactions related to this account and generates, when requested, an array with all the data related to this history. Every time the user deposits or withdrawals from her account, the Account function calls on my third and final function, the Transaction. This function is responsible for managing the properties of each transaction, namely: the date it happen, what quality it has ("credit" or "debit"), its value, and the account's new balance after this transaction happened. 
 
 ## Screenshots
 
