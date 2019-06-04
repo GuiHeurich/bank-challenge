@@ -1,7 +1,7 @@
 
 ## Depencies
 
-In order to run this program program properly, make sure you hvae installed the following node.js packages:
+In order to run this program program properly, make sure you have installed the following node.js packages:
 - Date Format (```npm install dateformat```)
 
 
