@@ -4,6 +4,38 @@ This program simulates common transactions associated with a bank account. Once 
 
 Note: this program runs entirely on the terminal.
 
+## User Stories
+
+```
+As a bank user,
+so that I can add money to my Account
+I would like to be able to deposit a sum of my choosing.
+
+As a bank user,
+so that I can take money from my Account
+I would like to be able to withdrawal a sum of my choosing.
+
+As a bank user,
+so that I can keep track of how much money I have
+I would like to be able to print a bank statement.
+
+As a bank user,
+so that I can keep track of my deposits
+I would like my bank statement to show every deposit I made.
+
+As a bank user,
+so that I can keep track of my withdrawals
+I would like my bank statement to show every withdrawal I made.
+
+As a bank user,
+so that I can visualise my deposits, withdrawals, and current balance in any given time,
+I would like my bank statement to show the date in which each transaction occurred.
+
+As a bank user,
+so that I can visualise my most recent transactions first,
+I would like my bank statement to show the date of each transaction in a descending order.
+```
+
 ## How to use
 
 In order to run this program program properly, make sure you have installed the following node.js packages:
@@ -38,43 +70,12 @@ Developed in Javascript for node.js. Using Jasmine standalone for testing, Eslin
 
 To run the tests, coverage and the linter, please run ```npm test```.
 
-#### User Stories
 
-```
-As a bank user,
-so that I can add money to my Account
-I would like to be able to deposit a sum of my choosing.
-
-As a bank user,
-so that I can take money from my Account
-I would like to be able to withdrawal a sum of my choosing.
-
-As a bank user,
-so that I can keep track of how much money I have
-I would like to be able to print a bank statement.
-
-As a bank user,
-so that I can keep track of my deposits
-I would like my bank statement to show every deposit I made.
-
-As a bank user,
-so that I can keep track of my withdrawals
-I would like my bank statement to show every withdrawal I made.
-
-As a bank user,
-so that I can visualise my deposits, withdrawals, and current balance in any given time,
-I would like my bank statement to show the date in which each transaction occurred.
-
-As a bank user,
-so that I can visualise my most recent transactions first,
-I would like my bank statement to show the date of each transaction in a descending order.
-```
-
-#### Process followed through this challenge
+## Process followed through this challenge
   0. Decided to use Javascript, Jasmine, Eslint and Istanbul.
   1. Read the challenge, took notes of the acceptance criteria
   2. Planned the functions Account and AccountHistory
-  3. Wrote user Stories (see above)
+  3. Wrote user Stories (see below)
   4. Redesigned my functions. They now are Account, Deposit and Withdrawal.
   5. Implemented User Stories with a TDD approach.
   6. Refactored the whole code to check for Single Responsibility principle issues
@@ -87,9 +88,11 @@ Open node, require and create the account:
 ![Image 1](public/images/image_1.png)
 
 Deposit, deposit, withdrawal.
+
 ![Image 2](public/images/image_2.png)
 
 Print your statement.
+
 ![Image 3](public/images/image_3.png)
 
 

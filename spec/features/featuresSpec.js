@@ -22,17 +22,18 @@ describe('Account', function(){
   })
 
   it('prints a statement showing a deposit', function(){
-    expect(account.printStatement()).toContain("1000");
+    expect(account.printStatement()[1]).toContain("1000.00");
   })
 
   it('prints a statement showing a withdrawal', function(){
     account.withdrawal(500)
-    expect(account.printStatement()).toContain("500");
+    expect(account.printStatement()[1]).toContain("500.00");
   })
 
   it('prints transactions in a descending order', function(){
     account.withdrawal(500)
-    expect(account.printStatement()).toEqual("date || credit || debit || balance04/06/19 || || 500 || 50004/06/19 || 1000 || || 1000");
+    expect(account.printStatement()[1]).toContain("500.00");
+    expect(account.printStatement()[2]).toContain("1000.00");
   })
 
 });
