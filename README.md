@@ -82,6 +82,15 @@ I would like my bank statement to show the date of each transaction in a descend
 
 ## Screenshots
 
+Open node, require and create the account:
+
+![Image 1](public/images/image_1.png)
+
+Deposit, deposit, withdrawal.
+![Image 2](public/images/image_2.png)
+
+Print your statement.
+![Image 3](public/images/image_3.png)
 
 
 ## Next Steps
